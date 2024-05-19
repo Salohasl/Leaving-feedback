@@ -95,7 +95,7 @@ header nav ul a.active{
     box-shadow:0px -6px 0 white inset;
 }
 .conteiner{
-    background-image:url(/litva/img/litva.JPG);
+    background-image:url(./litva/img/litva.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -290,7 +290,7 @@ button:hover{
 }
 
 footer{
-    background-image: url(/img/fon.jpg);
+    background-image: url(./img/fon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
