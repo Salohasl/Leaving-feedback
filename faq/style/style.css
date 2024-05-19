@@ -1,0 +1,345 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  .phone{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 50;
+    animation: showWhatsapp 1s linear infinite;
+}
+@keyframes  showWhatsapp{
+    0%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.8);
+    }
+} 
+header img{
+    width: 200px;
+    padding: 20px 5px 0px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    font-size: 20px;
+    transition: .2s linear;
+    padding: 10px;
+    margin: 10px;
+}
+header nav ul a:hover{
+    color: rgb(0,49,83);
+    box-shadow:0px -6px 0 rgb(0,49,83) inset;
+}
+header nav ul a.active{
+    color: rgb(0,49,83);
+    box-shadow:0px -6px 0 rgb(0,49,83) inset;
+}
+.fix-nav a.active{
+    box-shadow:0px -6px 0 white inset;
+}
+.fix-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 5px 10px;
+    background-color: rgb(0, 0, 0, .8);
+    z-index: -20;
+    opacity: 0;
+    transition: 1s;
+}
+.fix-nav.active{
+    z-index: 20;
+    opacity: 1;
+}
+.fix-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.fix-nav a{
+    text-decoration: none;
+    color: white;
+    transition: .2s linear;
+    padding: 10px;
+    margin: 10px;
+}
+.fix-nav a:hover{
+    box-shadow:0px -6px 0 white inset;
+}
+button{
+    padding: 20px;
+    background-color: rgb(0,49,83);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 15px 0 rgba(9, 118, 196, 0.808);
+    transition: 0.5s;
+    margin: 40px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+button:hover{
+    transform: translate(0,-3px);
+    box-shadow: 0 10px 10px 0 rgba(11, 99, 246, 1);
+    cursor: pointer;
+}
+.container{
+    margin-top: 10px;
+}
+.title{
+    background-image: url(https://static.tildacdn.com/lib/unsplash/ec9f058d-bb9f-c783-f043-c5c7819b8a24/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.title-wrapper{
+    background-color: rgb(31, 30, 30, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.title-wrapper h2{
+    color: white;
+    font-size: 60px;
+    animation: showText 1s both;
+}
+@keyframes showText{
+    0% { /* Старт анимации */
+        opacity: 0;
+        transform: translate3d(0%, 50%, 0px);
+    }
+    100% { /* в финале анимации - финал это заданная 0.55s */
+        opacity: 1;
+        transform: none;
+    }
+}
+.title-wrapper__swipe{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+.title-wrapper__swipe span{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 20px;
+    left: -5px;
+    animation: spanAnim 1s linear infinite;
+}
+.title-wrapper__swipe span:nth-of-type(2){
+    transform: rotate(-45deg);
+    left: 15px;
+}
+@keyframes spanAnim {
+    0%{
+        top: 20px;
+    }
+    50%{
+        top: 10px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+
+.faq {
+    padding-top: 100px;
+    transition: 0.5s;
+    background: rgb(218, 217, 223);
+  }
+  .faq h1 {
+    color: rgb(31, 30, 30);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .faq-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 50px 10px 50px 10px;
+  }
+
+  .faq-block {
+    opacity: 0;
+   
+    border-radius: 20px;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0px 0px 0px 10px;
+    width: 48%;
+    transition: 0.5s;
+  }
+  .faq-block.anim {
+    opacity: 1;
+    -webkit-animation: showHome 1.5s both;
+            animation: showHome 1.5s both;
+  }
+  
+@keyframes showHome {
+    0% { /* Старт анимации */
+      opacity: 0;
+      transform: translate3d(-100%, 0%, 0px);
+    }
+    100% { /* в финале анимации - финал это заданная 0.55s */
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .faq-block .faq-block__question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    gap: 20px;
+    color:rgb(31, 30, 30);
+  }
+  .faq-block .faq-block__question p {
+    font-size: 20px;
+  }
+  .faq-block .faq-block__question .btnFaq {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: none;
+  }
+  .faq-block .faq-block__question .btnFaq span {
+    width: 30px;
+    height: 3px;
+    background: #E6E6E6;
+    position: absolute;
+    left: 5px;
+    top: 19px;
+    transform: rotate(90deg);
+    border-radius: 5px;
+  }
+  .faq-block .faq-block__question .btnFaq span:nth-of-type(1) {
+    transform: rotate(0deg);
+  }
+  .faq-block .faq-block__question .btnFaq:hover {
+    opacity: 0.7;
+  }
+  .faq-block .faq-block__question .btnFaq.rotate {
+    transform: rotate(45deg);
+  }
+  .faq-block .faq-block__answer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    display: none;
+    color: rgb(31, 30, 30);
+    width: 500px;
+    line-height: 30px;
+  }
+  .faq-block .faq-block__answer.active {
+    display: block;
+    animation: showFaq 0.5s linear;
+  }
+  .faq-block .faq-block__answer hr{
+    border: 1px solid rgb(0,49,83, .1);
+  }
+  .faq-block .faq-block__answer a{
+    color: rgb(0,49,83);
+  }
+  .faq-block .faq-block__answer li{
+    margin-left: 30px;
+  }
+
+  @keyframes showFaq {
+    0% {
+      opacity: 0;
+      transform: translate3d(0px, -50px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+
+
+
+footer{
+    background-image: url(/img/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+footer img{
+    width: 40px;
+}
+footer nav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    
+}
+footer nav button{
+    margin: 10px;
+    width: 40%;
+}
+footer nav h2{
+    font-size: 38px;
+    color:white;
+    font-weight: 500;
+    margin-bottom:40px;
+    font-weight: 600;
+}
