@@ -6,57 +6,64 @@
 <meta name="HandheldFriendly" content="true" >
 <meta name="MobileOptimized" content="width">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>Трансфер</title>
+<title>Трансфер-Ричард: Отзывы</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="robots" content="index, follow" />
-<meta property="og:url" content="https://site">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
+<meta property="og:url" content="https://transfer-richard.ru/">
+<meta property="og:title" content="Трансфер-Ричард - пассажирские перевозки из Калининграда в Европу. Наши отзывы">
+<meta property="og:description" content="Трансфер-Ричард - пассажирские перевозки из Калининграда в Европу. Большой опыт работы, лучшие условия и настоящий комфорт. Наши отзывы">
 <meta property="og:type" content="website">
 <meta property="og:image" content="">
-<link rel="canonical" href="https://site">
+<link rel="canonical" href="https://transfer-richard.ru/">
 <meta name="keywords" content="" />
-<meta name="description" content="" />
-<link rel="icon" href="./img/logo.png" type="image/png">
+<meta name="description" content="Трансфер-Ричард - пассажирские перевозки из Калининграда в Европу. Большой опыт работы, лучшие условия и настоящий комфорт. Наши отзывы" />
+<link rel="icon" href="/img/logo.png" type="image/png">
 <link rel="stylesheet" href="/reviews/style/style.css">
+<link rel="stylesheet" href="/reviews/style/media.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <header>
   <nav>
-    <a href="./index.html"><img src="./img/logo.png" ></a>
+    <a href="/index.html"><img src="/img/logo.png" ></a>
     <hr>
     <ul>
-      <li><a href="./index.html">ГЛАВНАЯ</a></li>
-      <li><a href="./Germany/index.html">ГЕРМАНИЯ</a></li>
-      <li><a href="./poland/index.html">ПОЛЬША</a></li>
-      <li><a href="./litva/index.html">ЛИТВА</a></li>
-      <li><a href="./package/index.html">ПОСЫЛКА</a></li>
-      <li><a href="./reviews/index.html" class="active">ОТЗЫВЫ</a></li>
-      <li><a href="./faq/index.html">FAQ</a></li>
+      <li><a href="/index.html">ГЛАВНАЯ</a></li>
+      <li><a href="/Germany/index.html">ГЕРМАНИЯ</a></li>
+      <li><a href="/poland/index.html">ПОЛЬША</a></li>
+      <li><a href="/litva/index.html">ЛИТВА</a></li>
+      <li><a href="/package/index.html">ПОСЫЛКА</a></li>
+      <li><a href="/reviews/index.html" class="active">ОТЗЫВЫ</a></li>
+      <li><a href="/faq/index.html">FAQ</a></li>
       <li><a href="#contact">КОНТАКТЫ</a></li>
       <li><a href="tel:+79218502782">+7(921)850-27-82</a></li>
     </ul>
   </nav>
   <div class="fix-nav">
     <ul>
-      <li><a href="./index.html">ГЛАВНАЯ</a></li>
-      <li><a href="./Germany/index.html">ГЕРМАНИЯ</a></li>
-      <li><a href="./poland/index.html">ПОЛЬША</a></li>
-      <li><a href="./litva/index.html">ЛИТВА</a></li>
-      <li><a href="./package/index.html">ПОСЫЛКА</a></li>
-      <li><a href="./reviews/index.html" class="active">ОТЗЫВЫ</a></li>
-      <li><a href="./faq/index.html">FAQ</a></li>
+      <li><a href="/index.html">ГЛАВНАЯ</a></li>
+      <li><a href="/Germany/index.html">ГЕРМАНИЯ</a></li>
+      <li><a href="/poland/index.html">ПОЛЬША</a></li>
+      <li><a href="/litva/index.html">ЛИТВА</a></li>
+      <li><a href="/package/index.html">ПОСЫЛКА</a></li>
+      <li><a href="/reviews/index.html" class="active">ОТЗЫВЫ</a></li>
+      <li><a href="/faq/index.html">FAQ</a></li>
       <li><a href="#contact">КОНТАКТЫ</a></li>
       <li><a href="tel:+79218502782">+7(921)850-27-82</a></li>
     </ul>
+  </div>
+  <div class="menuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 </header>
 <body>
 
     <div class="phone">
-        <a href="https://wa.me/+79218502782"><img src="./img/whatsapp.png" width="50px"></a>
+        <a href="https://wa.me/+79218502782"><img src="/img/whatsapp.png" width="50px"></a>
     </div>
 
     <div class="container">
@@ -71,57 +78,42 @@
             </div>
         </div>
         <div class="review">
-            <h2>Вы можете оставить отзыв ниже</h2>
+            <h2>Вы можете оставить отзыв по <a href="#contact">ссылкам ниже</a></h2>
             <p>Мы ценим каждого клиента</p>
-            <button id="reviewShow">Оставить отзыв</button>
-            <div class="review-form">
-                <form>
-                    <div class="close" id="close">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" name="name" id="name" placeholder="Ваше имя" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Отзыв:</label>
-                        <textarea name="comment" id="comment" cols="40" rows="5" placeholder="Оставьте отзыв" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" id="add-review">Добавить отзыв</button>
-                    </div>
-                </form>
-            </div>
-            <div class="review-wrapper">
-              
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/img/Screenshot_2.png" alt="reviews">
+                </div>
+                <div class="swiper-slide">2</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
 
-    <div class="login-form">
-      <div class="login-wrapper">
-          <input type="password" name="password" id="password" placeholder="Введите пароль">
-          <button class="logFormButton">Подтвердить</button>
-          <button class="logFormButton">Закрыть</button>
-      </div>
-    </div>
 
     <footer id="contact">
       <nav>
-        <h2>Свяжитесь с нами удобным для вас способом</h2>
-        <button><a href="#">WhatsApp</a></button>
-        <button><a href="#">Viber</a></button>
-        <button><a href="#">transfer555@internet.ru</a></button>
+        <h2>Наши контакты</h2>
+        <button><a href="https://wa.me/+79218502782">WhatsApp</a></button>
+        <button><a href="https://t.me/+79218502782">Telegram</a></button>
+        <button><a href="https://www.avito.ru/kaliningrad/predlozheniya_uslug/transfer_passazhirskie_perevozki_3349732944">Avito</a></button>
         <button> <a href="tel:+79218502782">+7(921)850-27-82</a></button>
   
       </nav>
-      <div class="login">
-        <p>Для владельца сайта:</p>
-        <button class="login-btn">Настройка</button>
-      </div>
     </footer>
-    <script src="./script/review.js"></script>
-    <script src="./script/show.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="/script/show.js"></script>
 </body>
 </html>
